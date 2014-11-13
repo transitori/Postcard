@@ -75,10 +75,38 @@
                                 <state key="normal" title="Send Message">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendMailButtonPressed:" destination="lKN-mg-CUs" eventType="touchUpInside" id="XaC-Tb-itN"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ush-aa-p5B">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="164" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Ush-aa-p5B"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ush-aa-p5B"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="enterMessageTextField" destination="Fhb-g3-PJr" id="O7o-ST-XXN"/>
+                        <outlet property="enterNameTextField" destination="m05-Pe-lpS" id="bZ1-hN-pu8"/>
+                        <outlet property="messageLabel" destination="09x-UU-5mt" id="qrw-iZ-4xu"/>
+                        <outlet property="nameLabel" destination="Ush-aa-p5B" id="pwi-bt-QpN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lK8-qh-Pgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,6 +129,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ogu-xs-qQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-186" y="346"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F68-mh-0uB">
+            <objects>
+                <viewController id="igt-Mb-1RW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KTD-Pc-TOF"/>
+                        <viewControllerLayoutGuide type="bottom" id="P4m-yZ-QZ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3LM-OA-w6a">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9c-nq-APq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
